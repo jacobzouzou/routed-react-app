@@ -1,0 +1,26 @@
+import React, {useState, useEffect} from 'react';
+
+const GithubUser = ({login}) => {
+    const [data, setData]= useState(null);
+
+    useEffect(()=>{
+        fetch(`https://api.github.com/users/${login}`)
+        .then(res=>res.json())
+        .then(setData)// .then(resJson =>setData(resJson))
+        .catch(console.error)
+    },[login]);
+
+    if(data){
+        return (
+            <div>
+                <h1>{data.login}</h1>
+                <img src={data.avatar_url} width={100} />
+            </div>
+        );
+    }else{
+        return null;
+    }
+
+};
+
+export default GithubUser;
