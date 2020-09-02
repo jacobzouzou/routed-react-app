@@ -6,7 +6,7 @@ import User from "./components/User"
 function App() {
   return (
     <div className="App">
-      <User firstName="Jacob" lastName="ZOUZOU" age={55}></User>
+      <User firstName="Jacob" lastName="ZOUZOU" age="55"></User>
     </div>
   );
 }
