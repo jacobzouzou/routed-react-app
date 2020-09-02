@@ -11,6 +11,7 @@ function App() {
       {/* <User firstName="Jacob" lastName="ZOUZOU" age="55"></User> */}
       {/* <Checkbox/> */}
       <GithubUser login="moonhighway"/>
+      <GithubUser login="eveporcello"/>
     </div>
   );
 }
