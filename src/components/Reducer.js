@@ -1,10 +1,10 @@
 import React,{useState, useReducer} from 'react';
 
-//useState version
+// //useState version
 // const Checkbox = () => {
 //     const [checked, setChecked]=useState(false);
 
-//     function toggle(){
+//     const toggle=()=>{
 //         setChecked(checked=>!checked);
 //     };
 
