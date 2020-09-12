@@ -41,7 +41,7 @@ import './App.css';
 //   );
 // }
 
-/*HOC */
+/*HOC: Higher Order Component */
 // import WrappedButton from "./components/hoc"
 // function App() {
 //   return (
@@ -52,14 +52,27 @@ import './App.css';
 // }
 
 // /*Props render */
-// import { Parent, Children1 } from "./components/PropsRender"
+import MouseTraker from "./components/PropRender"
 
+function App() {
+  return (
+    <div className="App">
+      <MouseTraker/>
+    </div>
+  );
+}
+
+// /*Props render wiht HOC */
+// import { withMouse, Cat } from "./components/PropsRender"
+// const TheCat = (mouse) => {
+//   return <Cat mouse={mouse} />
+// }
 // function App() {
+//   const WrappedMouse = withMouse(TheCat);
+
 //   return (
 //     <div className="App">
-//       <Parent>
-//         {parentState => <Children1 params={parentState}></Children1>}
-//       </Parent>
+//       <WrappedMouse />
 //     </div>
 //   );
 // }
@@ -84,16 +97,16 @@ import './App.css';
 //   );
 // }
 
-/* Hooks */
-import Hooks from './components/Hooks';
+// /* Hooks */
+// import Hooks from './components/Hooks';
 
-function App() {
-  return (
-    <div className="App">
-      <Hooks/>
-    </div>
-  );
-}
+// function App() {
+//   return (
+//     <div className="App">
+//       <Hooks/>
+//     </div>
+//   );
+// }
 
 
 export default App;

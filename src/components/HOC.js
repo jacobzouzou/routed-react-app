@@ -1,6 +1,7 @@
 import React from 'react';
 
 const withButton=Button=>()=><Button/>
+
 const Button=()=>{
     return <button>Hoc test</button>
 }

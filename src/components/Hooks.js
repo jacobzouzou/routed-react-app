@@ -8,19 +8,19 @@ import useCounter from "../components/CustomHook";
 
 const Hooks = () => {
     const [count, setCount] = useState(0);
-    const [custCount, udpateCount] = useCounter();
+    const [myCount, udpateCount] = useCounter();
 
     // useEffect(()=>console.log(count),[]);
 
     useEffect(() => {
         console.log("Count:", count);
-        console.log("Cust count:", custCount);
+        console.log("Cust count:", myCount);
     });
 
     //Use cust hook
     const handleClick = useCallback(() => {
         setCount(count + 1);
-        udpateCount(custCount + 1);
+        udpateCount(myCount + 1);
     });
 
     return (
