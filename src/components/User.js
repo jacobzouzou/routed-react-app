@@ -32,4 +32,11 @@ const User = ({firstName, lastName, age}) => {
 //     age:PropsTypes.number
 // }
 
-export default User;
+function App() {
+  return (
+    <div className="App">
+      <User firstName="Jacob" lastName="ZOUZOU" age="55"></User>
+    </div>
+  );
+}
+export default App;

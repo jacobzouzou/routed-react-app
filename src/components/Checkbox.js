@@ -2,30 +2,36 @@ import React, { useState, useEffect } from 'react';
 
 //useState and useEffect
 const Checkbox = () => {
-    const [checked, setChecked] = useState(false);
+  const [checked, setChecked] = useState(false);
 
-    //generic function
-    useEffect(()=>{
-        console.log("click checkbox");
-    });
+  //generic function
+  useEffect(() => {
+    console.log("click checkbox");
+  });
 
-    // //parameterized function
-    // useEffect(()=>{
-    //     console.log("click checkbox");
-    // },[checked]);
+  // //parameterized function
+  // useEffect(()=>{
+  //     console.log("click checkbox");
+  // },[checked]);
 
 
-    // //at once function
-    //  useEffect(() => {
-    //     console.log("click checkbox");
-    // }, []);
+  // //at once function
+  //  useEffect(() => {
+  //     console.log("click checkbox");
+  // }, []);
 
-    return (
-        <div>
-            <input type="checkbox" value={checked} onChange={(checked) => setChecked(checked => !checked)} />
-            {checked ? "checked" : "not checked"}
-        </div>
-    );
+  return (
+    <div>
+      <input type="checkbox" value={checked} onChange={(checked) => setChecked(checked => !checked)} />
+      {checked ? "checked" : "not checked"}
+    </div>
+  );
 };
 
-export default Checkbox;
+export default function App() {
+  return (
+    <div className="App">
+      <Checkbox />
+    </div>
+  );
+}

@@ -1,12 +1,34 @@
-import React from 'react';
+import React,{useEffect, useCallback, useState} from 'react';
 
+function useCounter(value) {
+    const [count, setCount]=useState(value);
+    return [count, setCount];
+}
 
-/* Custom hook is a function with name wich starts with : use... */
+const CustomHook = () => {
 
-export default function useCounter (value) {
-    let count = value;
-    function updateCount (){
-        count = count + 1;
-    }
-    return [count, updateCount];
+    const [count,updateCount] = useCounter(100);
+
+    useEffect(() => {
+        console.log("Cust count:", count);
+    });
+
+    const handleClick = useCallback(() => {
+        updateCount(count + 1);
+    });
+
+    return (
+        <div>
+            <p>You clicked {count} times</p>
+            <button onClick={handleClick}>Click me</button>
+        </div>
+    );
+};
+
+export default function App() {
+    return (
+        <div className="App">
+            <CustomHook/>
+        </div>
+    );
 }

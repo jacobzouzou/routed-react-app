@@ -1,11 +1,19 @@
 import React from 'react';
 
-const withButton=Button=>()=><Button/>
 
-const Button=()=>{
-    return <button>Hoc test</button>
+const Button = (props) => {
+  return <button style={{color:props.color}}>Wrapped button</button>
 }
 
-const WrappedButton=withButton(Button);
+const withButton = Button => (props) => <Button color={props.color} />
 
-export default WrappedButton;
+const WrappedButton = withButton(Button);
+
+/*HOC: Higher Order Component */
+export default function App() {
+  return (
+    <div className="App">
+      <WrappedButton color="green"/>
+    </div>
+  );
+}

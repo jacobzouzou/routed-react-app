@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import useCounter from "../components/CustomHook";
 
 /*useEffect: take a function and an array as parameter
   function runs at first component render and every subsequent render/update
@@ -8,19 +7,15 @@ import useCounter from "../components/CustomHook";
 
 const Hooks = () => {
     const [count, setCount] = useState(0);
-    const [myCount, udpateCount] = useCounter();
-
     // useEffect(()=>console.log(count),[]);
 
     useEffect(() => {
         console.log("Count:", count);
-        console.log("Cust count:", myCount);
     });
 
     //Use cust hook
     const handleClick = useCallback(() => {
         setCount(count + 1);
-        udpateCount(myCount + 1);
     });
 
     return (
@@ -31,4 +26,12 @@ const Hooks = () => {
     );
 };
 
-export default Hooks;
+/* Hooks */
+
+export default function App() {
+  return (
+    <div className="App">
+      <Hooks/>
+    </div>
+  );
+}

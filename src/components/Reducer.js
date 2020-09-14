@@ -26,4 +26,12 @@ const Checkbox = () => {
         </div>
     );
 };
-export default Checkbox;
+
+
+export default function App() {
+  return (
+    <div className="App">
+      <Checkbox/>
+    </div>
+  );
+}

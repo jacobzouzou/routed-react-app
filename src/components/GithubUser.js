@@ -23,4 +23,11 @@ const GithubUser = ({login}) => {
 
 };
 
-export default GithubUser;
+export default function App() {
+  return (
+    <div className="App">
+      <GithubUser login="moonhighway"/>
+      <GithubUser login="eveporcello"/>
+    </div>
+  );
+}
