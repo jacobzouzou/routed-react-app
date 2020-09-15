@@ -35,10 +35,4 @@ class HelloWorld extends Component {
     }
 }
 
-export default function App() {
-    return (
-        <div className="App">
-            <HelloWorld />
-        </div>
-    );
-}
+export default HelloWorld

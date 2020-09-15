@@ -23,10 +23,4 @@ const CustomHook = () => {
     );
 };
 
-export default function App() {
-    return (
-        <div className="App">
-            <CustomHook />
-        </div>
-    );
-}
+export default CustomHook

@@ -1,19 +1,13 @@
 import React from 'react';
+import WrappedMouse from './HOC _2';
 
 
 const Button = (props) => {
-  return <button style={{color:props.color}}>Wrapped button</button>
+  return <button style={{ color: props.color }}>Wrapped button</button>
 }
 
 const withButton = Button => (props) => <Button color={props.color} />
 
-const WrappedButton = withButton(Button);
+const WrappedButton = withButton(Button)
 
-/*HOC: Higher Order Component */
-export default function App() {
-  return (
-    <div className="App">
-      <WrappedButton color="green"/>
-    </div>
-  );
-}
+export default WrappedButton

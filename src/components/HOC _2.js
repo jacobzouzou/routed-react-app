@@ -20,13 +20,10 @@ const MyMouse = () => {
   return <Mouse render={position => (<Cat mouse={position} />)}/>
 }
 
-export default function App() {
-  const WrappedMouse = withMouse(MyMouse);
-  return (
-    <div className="App">
-      <WrappedMouse />
-    </div>
-  );
-}
+const WrappedMouse = withMouse(MyMouse);
+
+export default WrappedMouse
+
+
 
 

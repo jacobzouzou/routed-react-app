@@ -5,7 +5,7 @@ import React, { useState, useEffect, useCallback } from 'react';
   great for add log, accessing 3rd party API - see githubUser.js, etc...
 */
 
-const Hooks = () => {
+const Hook = () => {
     const [count, setCount] = useState(0);
     // useEffect(()=>console.log(count),[]);
 
@@ -26,12 +26,4 @@ const Hooks = () => {
     );
 };
 
-/* Hooks */
-
-export default function App() {
-  return (
-    <div className="App">
-      <Hooks/>
-    </div>
-  );
-}
+export default Hook
