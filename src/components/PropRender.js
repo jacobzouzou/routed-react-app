@@ -54,12 +54,4 @@ export class Cat extends React.Component {
       );
     }
   }
-
-  function App() {
-    return (
-      <div className="App">
-        <MouseTraker/>
-      </div>
-    );
-  }
-  export default App;
+  export default MouseTraker;

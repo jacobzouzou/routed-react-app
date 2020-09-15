@@ -41,7 +41,7 @@ export class Cat extends React.Component {
     }
   }
 
-  class MouseTracker extends React.Component {
+  class MouseTracker2 extends React.Component {
     render() {
       return (
         <div>
@@ -56,4 +56,4 @@ export class Cat extends React.Component {
   //   children: PropTypes.func.isRequired
   // };
 
-export default MouseTracker;
+export default MouseTracker2;
