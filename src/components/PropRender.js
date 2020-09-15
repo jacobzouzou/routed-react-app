@@ -54,6 +54,7 @@ export class Cat extends React.Component {
       );
     }
   }
+
   function App() {
     return (
       <div className="App">

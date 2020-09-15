@@ -10,10 +10,11 @@ import './index.css';
 // import App from "./components/Checkbox"
 // import App from "./components/Hook"
 // import App from "./components/ContextApi"
-import App from "./components/CustomHook"
+// import App from "./components/CustomHook"
 // import App from "./components/GithubUser"
 // import App from "./components/HOC"
 // import App from "./components/HOC _2"
+import App from "./components/LazyLoading"
 
 import * as serviceWorker from './serviceWorker';
 
