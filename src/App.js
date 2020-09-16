@@ -19,20 +19,26 @@ function App() {
     return (
         <Router>
             <div>
-                <aside>
-                    <Link to={"/Lazyloading"}></Link>
-                    <Link to={"/hoc"}></Link>
-                    <Link to={"/hoc2"}></Link>
-                    <Link to={"/hook"}></Link>
-                    <Link to={"/hook2"}></Link>
-                    <Link to={"/customhook"}></Link>
-                    <Link to={"/context"}></Link>
-                    <Link to={"/proprender"}></Link>
-                    <Link to={"/proprender2"}></Link>
-                    <Link to={"/reducer"}></Link>
-                </aside>
+                <nav>
+                    <Link className="navItem" to={"/"}>Home</Link>
+                    <Link className="navItem" to={"/Lazyloading"}>Lady loading</Link>
+                    <Link className="navItem" to={"/hoc"}>Higher Order Component</Link>
+                    <Link className="navItem" to={"/hoc2"}>Higher Order Commponent 2</Link>
+                    <Link className="navItem" to={"/hook"}>Hook</Link>
+                    <Link className="navItem" to={"/hook2"}>Hook 2</Link>
+                    <Link className="navItem" to={"/customhook"}>Custom Hook</Link>
+                    <Link className="navItem" to={"/context"}>Context</Link>
+                    <Link className="navItem" to={"/proprender"}>Prop Render </Link>
+                    <Link className="navItem" to={"/proprender2"}>Prop Render 2</Link>
+                    <Link className="navItem" to={"/reducer"}>Reducer</Link>
+                </nav>
                 <main>
-                    <Route exact path={`/`} component={Home} />
+                    {/* <Route exact path={`/`} component={Home} /> */}
+                    <Route exact path={`/`} component={() => (
+                        <div>
+                            <Home />
+                        </div>
+                    )} />
 
                     <React.Suspense fallback={<p>Please wait</p>}>
                         <div className="App">
@@ -70,15 +76,15 @@ function App() {
                             </div>
                         )
                         } /> */}
-                    <Route path={`/user/:firstname?/:lastname?/:age?`} 
-                    component={({ match }) => (
-                        <div>
-                            <User
-                                firstName={match.params.firstname}
-                                lastName={match.params.lastname}
-                                age={match.params.age}
-                            />
-                        </div>)} />
+                    <Route path={`/user/:firstname?/:lastname?/:age?`}
+                        component={({ match }) => (
+                            <div>
+                                <User
+                                    firstName={match.params.firstname}
+                                    lastName={match.params.lastname}
+                                    age={match.params.age}
+                                />
+                            </div>)} />
                 </main>
             </div>
         </Router>
