@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 const { Provider, Consumer } = React.createContext();
 
-const WithReButton = button => <button color="red" />
+// const WithRedButton = button => <button color="red" />
 
 class Container extends Component {
     constructor(props) {

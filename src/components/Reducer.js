@@ -1,5 +1,4 @@
-import React,{useState, useReducer} from 'react';
-
+// import React,{useState} from 'react';
 // //useState version
 // const Checkbox = () => {
 //     const [checked, setChecked]=useState(false);
@@ -15,6 +14,8 @@ import React,{useState, useReducer} from 'react';
 //         </div>
 //     );
 // };
+
+import React,{useReducer} from 'react';
 
 //useReducer version
 const Checkbox2 = () => {

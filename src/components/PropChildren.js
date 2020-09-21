@@ -2,7 +2,9 @@
     Props render: a technic that consist to share code between components from a function: "props.render"
     component with prop render: receive a function, call it, rather build its own logic
 */
-import React,{PropTypes} from 'react';
+import React from 'react';
+// import {PropTypes} from 'react';
+
 import cat from "../assets/cat.jpg"
 
 export class Cat extends React.Component {
@@ -10,7 +12,7 @@ export class Cat extends React.Component {
       const mouse = this.props.mouse;
       return (
         <img src={cat } width="150" height="100" 
-        style={{ position: 'absolute', left: mouse.x, top: mouse.y }} />
+        style={{ position: 'absolute', left: mouse.x, top: mouse.y }}  alt=""/>
       );
     }
   }

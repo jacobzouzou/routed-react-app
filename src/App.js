@@ -15,6 +15,7 @@ import GithubUser from "./components/GithubUser"
 import WrappedButton from "./components/HOC"
 import WrappedMouse from "./components/HOC _2"
 import CodSplitting from "./components/CodSplitting"
+import StyledComponent from "./components/StyledComponent"
 
 function App() {
     return (
@@ -22,7 +23,7 @@ function App() {
             <div>
                 <nav>
                     <Link className="navItem" to={"/"}>Home</Link><br />
-                    <Link className="navItem" to={"/CodSplitting"}>Code Splitting</Link><br />
+                    <Link className="navItem" to={"/codeSplitting"}>Code Splitting</Link><br />
                     <Link className="navItem" to={"/hoc"}>Higher Order Component</Link><br />
                     <Link className="navItem" to={"/hoc2"}>Higher Order Commponent 2</Link><br />
                     <Link className="navItem" to={"/hook"}>Hook</Link><br />
@@ -31,7 +32,8 @@ function App() {
                     <Link className="navItem" to={"/context"}>Context</Link><br />
                     <Link className="navItem" to={"/proprender"}>Prop Render </Link><br />
                     <Link className="navItem" to={"/proprender2"}>Prop Render 2</Link><br />
-                    <Link className="navItem" to={"/reducer"}>Reducer</Link>
+                    <Link className="navItem" to={"/reducer"}>Reducer</Link><br />
+                    <Link className="navItem" to={"/styledComponent"}>Styled Components</Link>
                 </nav>
                 <main>
                     {/* <Route exact path={`/`} component={Home} /> */}
@@ -89,6 +91,8 @@ function App() {
                                     age={match.params.age}
                                 />
                             </div>)} />
+                    <Route path={`/styledComponent`} component={StyledComponent} />
+
                 </main>
             </div>
         </Router>

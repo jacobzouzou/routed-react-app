@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
+import style from "../Hook.module.css"
 
 /*useEffect: take a function and an array as parameter
   function runs at first component render and every subsequent render/update
@@ -21,7 +22,7 @@ const Hook = () => {
     return (
         <div>
             <p>You clicked {count} times</p>
-            <button onClick={handleClick}>Click me</button>
+            <button className={style.button} onClick={handleClick}>Click me</button>
         </div>
     );
 };

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Mouse, Cat } from "./PropRender"
 
 /* HOC: Higher Order Component: has Mouse as child*/
