@@ -19,5 +19,6 @@ nav{
   margin-bottom: 20px;  
 }
 .button{
-  color: green;
+  border: solid thin green;
+  background-color: white;
 }

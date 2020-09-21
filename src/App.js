@@ -21,16 +21,16 @@ function App() {
         <Router>
             <div>
                 <nav>
-                    <Link className="navItem" to={"/"}>Home</Link><br/>
-                    <Link className="navItem" to={"/CodSplitting"}>Code Splitting</Link><br/>
-                    <Link className="navItem" to={"/hoc"}>Higher Order Component</Link><br/>
-                    <Link className="navItem" to={"/hoc2"}>Higher Order Commponent 2</Link><br/>
-                    <Link className="navItem" to={"/hook"}>Hook</Link><br/>
-                    <Link className="navItem" to={"/hook2"}>Hook 2</Link><br/>
-                    <Link className="navItem" to={"/customhook"}>Custom Hook</Link><br/>
-                    <Link className="navItem" to={"/context"}>Context</Link><br/>
-                    <Link className="navItem" to={"/proprender"}>Prop Render </Link><br/>
-                    <Link className="navItem" to={"/proprender2"}>Prop Render 2</Link><br/>
+                    <Link className="navItem" to={"/"}>Home</Link><br />
+                    <Link className="navItem" to={"/CodSplitting"}>Code Splitting</Link><br />
+                    <Link className="navItem" to={"/hoc"}>Higher Order Component</Link><br />
+                    <Link className="navItem" to={"/hoc2"}>Higher Order Commponent 2</Link><br />
+                    <Link className="navItem" to={"/hook"}>Hook</Link><br />
+                    <Link className="navItem" to={"/hook2"}>Hook 2</Link><br />
+                    <Link className="navItem" to={"/customhook"}>Custom Hook</Link><br />
+                    <Link className="navItem" to={"/context"}>Context</Link><br />
+                    <Link className="navItem" to={"/proprender"}>Prop Render </Link><br />
+                    <Link className="navItem" to={"/proprender2"}>Prop Render 2</Link><br />
                     <Link className="navItem" to={"/reducer"}>Reducer</Link>
                 </nav>
                 <main>
@@ -46,7 +46,10 @@ function App() {
                             <Route path={`/CodSplitting`} component={CodSplitting} />
                         </div>
                     </React.Suspense>
-                    <Route path={`/hoc`} component={WrappedButton} />
+                    {/* <Route path={`/hoc`} component={WrappedButton} /> */}
+                    <Route path={`/hoc`} component={() => (
+                        <WrappedButton color="red" />
+                    )} />
                     <Route path={`/hoc2`} component={WrappedMouse} />
                     <Route path={`/hook`} component={Hook} />
                     <Route path={`/hook2`} component={Checkbox} />

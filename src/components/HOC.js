@@ -1,5 +1,4 @@
 import React from 'react';
-import WrappedMouse from './HOC _2';
 
 
 const Button = (props) => {
