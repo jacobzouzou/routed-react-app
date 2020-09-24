@@ -1,22 +1,4 @@
 import React from "react"
-import { BrowserRouter as Router, Route, Link } from "react-router-dom"
-import "./index.css"
-
-import Home from "./components/Home"
-import MouseTraker from "./components/PropRender"
-import MouseTracker2 from "./components/PropChildren"
-import User from "./components/User"
-import Checkbox2 from "./components/Reducer"
-import Checkbox from "./components/Checkbox"
-import Hook from "./components/Hook"
-import HelloWorld from "./components/ContextApi"
-import CustomHook from "./components/CustomHook"
-import GithubUser from "./components/GithubUser"
-import WrappedButton from "./components/HOC"
-import WrappedMouse from "./components/HOC _2"
-import CodSplitting from "./components/CodSplitting"
-import StyledComponent from "./components/StyledComponent"
-
 function App() {
     return (
         <Router>
