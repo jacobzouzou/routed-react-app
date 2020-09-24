@@ -4,13 +4,13 @@ const mul = (a, b) => a * b;
 const sub = (a, b) => a - b;
 const div = (a, b) => a / b;
   
-beforeEach(()=>{
-  console.log(`Begin`)
-})
+// beforeEach(()=>{
+//   console.log(`Begin`)
+// })
 
-afterEach(()=>{
-  console.log(`End`)
-})
+// afterEach(()=>{
+//   console.log(`End`)
+// })
 describe("My tests first group", () => {
   test(`Adding 1 + 1 equals 2`, () => {
     expect(sum(1, 1)).toBe(2);
