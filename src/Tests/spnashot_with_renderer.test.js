@@ -4,11 +4,11 @@ import { create,act} from "react-test-renderer";
 
 import App from "../App";
 
-// test("renders learn react link", () => {a
-//   const { getByText } = render(<App />);
-//   const linkElement = getByText(/Testing/);
-//   expect(linkElement).toBeInTheDocument();
-// });
+test("renders learn react link", () => {
+  const { getByText } = render(<App />);
+  const linkElement = getByText(/Test with jest/);
+  expect(linkElement).toBeInTheDocument();
+});
 
 //snapshot with renderer
 it("renders correctly", () => {
