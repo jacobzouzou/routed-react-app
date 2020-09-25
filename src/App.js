@@ -14,7 +14,7 @@ import CustomHook from "./components/CustomHook"
 import GithubUser from "./components/GithubUser"
 import WrappedButton from "./components/HOC"
 import WrappedMouse from "./components/HOC _2"
-import CodSplitting from "./components/CodSplitting"
+import CodSplitting from "./components/CodeSplitting"
 import StyledComponent from "./components/StyledComponent"
 
 function App() {
@@ -23,7 +23,6 @@ function App() {
             <div>
                 <nav>
                     <Link className="navItem" to={"/"}>Home</Link><br />
-                    <Link className="navItem" to={"/codeSplitting"}>Code Splitting</Link><br />
                     <Link className="navItem" to={"/hoc"}>Higher Order Component</Link><br />
                     <Link className="navItem" to={"/hoc2"}>Higher Order Commponent 2</Link><br />
                     <Link className="navItem" to={"/hook"}>Hook</Link><br />
@@ -32,6 +31,7 @@ function App() {
                     <Link className="navItem" to={"/context"}>Context</Link><br />
                     <Link className="navItem" to={"/proprender"}>Prop Render </Link><br />
                     <Link className="navItem" to={"/proprender2"}>Prop Render 2</Link><br />
+                    <Link className="navItem" to={"/codeSplitting"}>Prop render with Code Splitting</Link><br />
                     <Link className="navItem" to={"/reducer"}>Reducer</Link><br />
                     <Link className="navItem" to={"/styledComponent"}>Styled Components</Link>
                 </nav>
@@ -45,7 +45,7 @@ function App() {
 
                     <React.Suspense fallback={<p>Please wait</p>}>
                         <div className="App">
-                            <Route path={`/CodSplitting`} component={CodSplitting} />
+                            <Route path={`/codeSplitting`} component={CodSplitting} />
                         </div>
                     </React.Suspense>
                     {/* <Route path={`/hoc`} component={WrappedButton} /> */}
