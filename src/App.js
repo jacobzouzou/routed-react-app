@@ -25,8 +25,8 @@ function App() {
                     <Link className="navItem" to={"/"}>Home</Link><br />
                     <Link className="navItem" to={"/hoc"}>Higher Order Component</Link><br />
                     <Link className="navItem" to={"/hoc2"}>Higher Order Commponent 2</Link><br />
-                    <Link className="navItem" to={"/hook"}>Hook</Link><br />
-                    <Link className="navItem" to={"/hook2"}>Hook 2</Link><br />
+                    <Link className="navItem" to={"/hook"}>Hook [useSate&useEffect]</Link><br />
+                    <Link className="navItem" to={"/hook2"}>Hook[chekcbox]</Link><br />
                     <Link className="navItem" to={"/customhook"}>Custom Hook</Link><br />
                     <Link className="navItem" to={"/context"}>Context</Link><br />
                     <Link className="navItem" to={"/propRender"}>Prop.Render </Link><br />

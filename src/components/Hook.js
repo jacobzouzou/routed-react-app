@@ -9,10 +9,16 @@ import style from "../Hook.module.css"
 const Hook = () => {
     const [count, setCount] = useState(0);
 
-    // useEffect(()=>console.log(count),["increment","decrement"]);
-    useEffect(() => {
-        console.log("Count :", count);
-    });
+    // //at once function
+    // useEffect(()=>console.log(count),[]);
+
+    // //param function
+    // useEffect(()=>console.log(count),[count]);
+
+    //  //generic function
+    // useEffect(() => {
+    //     console.log("Count :", count);
+    // });
 
     //Use cust hook
     const increment = useCallback(()=>{

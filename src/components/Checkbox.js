@@ -4,15 +4,15 @@ import React, { useState, useEffect } from 'react';
 const Checkbox = () => {
   const [checked, setChecked] = useState(false);
 
-  //generic function
-  useEffect(() => {
-    console.log("click checkbox");
-  });
+  // //generic function
+  // useEffect(() => {
+  //   console.log("click checkbox");
+  // });
 
-  // //parameterized function
-  // useEffect(()=>{
-  //     console.log("click checkbox");
-  // },[checked]);
+  //parameterized function
+  useEffect(()=>{
+      console.log("click checkbox");
+  },[checked]);
 
 
   // //at once function
