@@ -48,7 +48,8 @@ function App() {
                             <Route path={`/codeSplitting`} component={CodSplitting} />
                         </div>
                     </React.Suspense>
-                    {/* <Route path={`/hoc`} component={WrappedButton} /> */}
+                    
+                    <Route path={`/hoc`} component={WrappedButton} />
                     <Route path={`/hoc`} component={() => (
                         <WrappedButton color="red" />
                     )} />

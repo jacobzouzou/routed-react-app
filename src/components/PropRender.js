@@ -1,16 +1,18 @@
 /*
-    Props render: a technic that consist to share code between components from a function: "props.render"
-    component with prop render: receive a function, call it, rather build its own logic
+    Props render: technic that consists to share code between components from a function: "props.render"
+    component with "prop.render": receive a function, call it, rather build its own logic
 */
 import React from 'react';
-import cat from "../assets/cat.jpg"
+import myCat from "../assets/cat.jpg"
 
 export class Cat extends React.Component {
+
     render() {
-      const mouse = this.props.mouse;
+      const position = this.props.position;
+
       return (
-        <img src={cat } width="150" height="100" 
-        style={{ position: 'absolute', left: mouse.x, top: mouse.y }} />
+        <img src={myCat } width="80" height="80" 
+        style={{ position: 'absolute', left: position.x, top: position.y }} />
       );
     }
   }
@@ -34,7 +36,9 @@ export class Cat extends React.Component {
         <div style={{ height: '100vh' }} onMouseMove={this.handleMouseMove}>
   
           {/*
-            use  prop `render` to set ui dynamicly.
+            Mouse call "prop.render()"
+            use  prop.render() to set ui dynamicly.
+            prop.render() receive value from class component sate
           */}
           {this.props.render(this.state)}
         </div>
@@ -48,10 +52,11 @@ export class Cat extends React.Component {
       return (
         <div>
           <h1>Moove mouse</h1>
-          {/** position is stored in Mouse state */}
-          <Mouse render={position => (<Cat mouse={position} />)}/>
+          {/** Mouse receive a function in 'render" prop */}
+          <Mouse render={mousePosition => (<Cat position={mousePosition} />)}/>
         </div>
       );
     }
   }
+
   export default MouseTraker;

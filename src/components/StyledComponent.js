@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from "styled-components"
+import styled from "styled-components";
 
 const Button = styled.button`
     boder:solid thick black;
