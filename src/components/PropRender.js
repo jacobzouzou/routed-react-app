@@ -1,6 +1,6 @@
 /*
     Props render: technic that consists to share code between components from a function: "props.render"
-    component with "prop.render": receive a function, call it, rather build its own logic
+    component with "props.render": receive a function, call it, rather build its own logic
 */
 import React from 'react';
 import myCat from "../assets/cat.jpg"

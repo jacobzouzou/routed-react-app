@@ -1,6 +1,6 @@
 /*
     Props render: technic that consists to share code between components from a function: "props.children()"
-    component with "prop.children()": receive a function, call it, rather build its own logic
+    component with "props.children()": receive a function, call it, rather build its own logic
 */
 import React from 'react';
 // import {PropTypes} from 'react';

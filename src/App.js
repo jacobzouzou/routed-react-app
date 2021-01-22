@@ -14,7 +14,7 @@ import CustomHook from "./components/CustomHook"
 import GithubUser from "./components/GithubUser"
 import WrappedButton from "./components/HOC"
 import WrappedMouse from "./components/HOC_2"
-import CodSplitting from "./components/CodeSplitting"
+import LaszyMouseTraker from "./components/CodeSplitting"
 import StyledComponent from "./components/StyledComponent"
 
 function App() {
@@ -45,7 +45,7 @@ function App() {
 
                     <React.Suspense fallback={<p>Please wait</p>}>
                         <div className="App">
-                            <Route path={`/codeSplitting`} component={CodSplitting} />
+                            <Route path={`/codeSplitting`} component={LaszyMouseTraker} />
                         </div>
                     </React.Suspense>
                     

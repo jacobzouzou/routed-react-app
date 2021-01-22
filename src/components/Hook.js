@@ -8,21 +8,26 @@ import style from "../Hook.module.css"
 
 const Hook = () => {
     const [count, setCount] = useState(0);
-    // useEffect(()=>console.log(count),[]);
 
+    // useEffect(()=>console.log(count),["increment","decrement"]);
     useEffect(() => {
-        console.log("Count:", count);
+        console.log("Count :", count);
     });
 
     //Use cust hook
-    const handleClick = useCallback(() => {
+    const increment = useCallback(()=>{
         setCount(count + 1);
     });
-
+    const decrement = useCallback(()=>{
+        if(count>=1){
+            setCount(count-1);
+        }
+    });
     return (
         <div>
             <p>You clicked {count} times</p>
-            <button className={style.button} onClick={handleClick}>Click me</button>
+            <button className={style.button} onClick={increment}>+</button>
+            <button className={style.button} onClick={decrement}>-</button>
         </div>
     );
 };
