@@ -1,6 +1,6 @@
 /*
-    Props render: a technic that consist to share code between components from a function: "props.render"
-    component with prop render: receive a function, call it, rather build its own logic
+    Props render: technic that consists to share code between components from a function: "props.children()"
+    component with "prop.children()": receive a function, call it, rather build its own logic
 */
 import React from 'react';
 // import {PropTypes} from 'react';
@@ -11,7 +11,7 @@ export class Cat extends React.Component {
     render() {
       const mouse = this.props.mouse;
       return (
-        <img src={cat } width="150" height="100" 
+        <img src={cat } width="80" height="80" 
         style={{ position: 'absolute', left: mouse.x, top: mouse.y }}  alt=""/>
       );
     }

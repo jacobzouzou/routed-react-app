@@ -8,8 +8,8 @@ function withMouse(Component) {
   return class extends React.Component {
     render() {
       return (
-        <Mouse render={mouse => (
-          <Component {...this.props} mouse={mouse} />
+        <Mouse render={mousePosition => (
+          <Component {...this.props} position={mousePosition} />
         )} />
       );
     }
@@ -17,7 +17,7 @@ function withMouse(Component) {
 }
 
 const MyMouse = () => {
-  return <Mouse render={position => (<Cat mouse={position} />)}/>
+  return <Mouse render={mousePosition => (<Cat position={mousePosition} />)}/>
 }
 
 const WrappedMouse = withMouse(MyMouse);

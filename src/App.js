@@ -13,7 +13,7 @@ import HelloWorld from "./components/ContextApi"
 import CustomHook from "./components/CustomHook"
 import GithubUser from "./components/GithubUser"
 import WrappedButton from "./components/HOC"
-import WrappedMouse from "./components/HOC _2"
+import WrappedMouse from "./components/HOC_2"
 import CodSplitting from "./components/CodeSplitting"
 import StyledComponent from "./components/StyledComponent"
 
@@ -29,8 +29,8 @@ function App() {
                     <Link className="navItem" to={"/hook2"}>Hook 2</Link><br />
                     <Link className="navItem" to={"/customhook"}>Custom Hook</Link><br />
                     <Link className="navItem" to={"/context"}>Context</Link><br />
-                    <Link className="navItem" to={"/proprender"}>Prop Render </Link><br />
-                    <Link className="navItem" to={"/proprender2"}>Prop Render 2</Link><br />
+                    <Link className="navItem" to={"/propRender"}>Prop.Render </Link><br />
+                    <Link className="navItem" to={"/propChildren"}>Prop.Children</Link><br />
                     <Link className="navItem" to={"/codeSplitting"}>Prop render with Code Splitting</Link><br />
                     <Link className="navItem" to={"/reducer"}>Reducer</Link><br />
                     <Link className="navItem" to={"/styledComponent"}>Styled Components</Link>
@@ -58,8 +58,8 @@ function App() {
                     <Route path={`/hook2`} component={Checkbox} />
                     <Route path={`/customhook`} component={CustomHook} />
                     <Route path={`/context`} component={HelloWorld} />
-                    <Route path={`/proprender`} component={MouseTraker} />
-                    <Route path={`/proprender2`} component={MouseTracker2} />
+                    <Route path={`/propRender`} component={MouseTraker} />
+                    <Route path={`/propChildren`} component={MouseTracker2} />
                     <Route path={`/reducer`} component={Checkbox2} />
                     {/*in line rendering */}
                     <Route
