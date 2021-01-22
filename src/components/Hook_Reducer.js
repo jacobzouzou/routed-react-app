@@ -18,7 +18,7 @@
 import React,{useReducer} from 'react';
 
 //useReducer version
-const Checkbox2 = () => {
+const Hook_useReducer = () => {
     const [checked, toggle]=useReducer(checked=>!checked, false);
     return (
         <div>
@@ -29,4 +29,4 @@ const Checkbox2 = () => {
 };
 
 
-export default Checkbox2
+export default Hook_useReducer

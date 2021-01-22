@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 //useState and useEffect
-const Checkbox = () => {
+const Hook_Checkbox = () => {
   const [checked, setChecked] = useState(false);
 
   // //generic function
@@ -28,4 +28,4 @@ const Checkbox = () => {
   );
 };
 
-export default Checkbox
+export default Hook_Checkbox

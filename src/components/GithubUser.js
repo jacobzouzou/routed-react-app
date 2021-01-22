@@ -1,12 +1,13 @@
 import React, {useState, useEffect} from 'react';
 
-const GithubUser = ({login}) => {
+export const GithubUser = ({login}) => {
     const [data, setData]= useState(null);
 
     useEffect(()=>{
         fetch(`https://api.github.com/users/${login}`)
         .then(res=>res.json())
-        .then(setData)// .then(resJson =>setData(resJson))
+        .then(setData) //or
+        // .then(resJson =>setData(resJson))
         .catch(console.error)
     },[login]);
 
@@ -20,10 +21,9 @@ const GithubUser = ({login}) => {
     }else{
         return null;
     }
-
 };
 
-export  function App() {
+export  function display() {
   return (
     <div className="App">
       <GithubUser login="moonhighway"/>
@@ -32,4 +32,3 @@ export  function App() {
   );
 }
 
-export default GithubUser

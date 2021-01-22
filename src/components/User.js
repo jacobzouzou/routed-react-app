@@ -8,7 +8,7 @@ const User = ({firstName, lastName, age}) => {
         <div>
             <div>Status: {status}</div>
             <h1>{firstName} {lastName} {age}</h1>
-            <button onClick={()=>{ setStatus("disable");}}>Click here</button>
+            <button onClick={()=>{ setStatus("disable");}}>Click Here</button>
         </div>
     );
 };

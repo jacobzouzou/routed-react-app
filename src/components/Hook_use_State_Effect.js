@@ -6,7 +6,7 @@ import style from "../Hook.module.css"
   great for add log, accessing 3rd party API - see githubUser.js, etc...
 */
 
-const Hook = () => {
+const Hook_use_State_Effect = () => {
     const [count, setCount] = useState(0);
 
     // //at once function
@@ -15,10 +15,10 @@ const Hook = () => {
     // //param function
     // useEffect(()=>console.log(count),[count]);
 
-    //  //generic function
-    // useEffect(() => {
-    //     console.log("Count :", count);
-    // });
+    //generic function
+    useEffect(() => {
+        console.log("Count :", count);
+    });
 
     //Use cust hook
     const increment = useCallback(()=>{
@@ -38,4 +38,4 @@ const Hook = () => {
     );
 };
 
-export default Hook
+export default Hook_use_State_Effect
