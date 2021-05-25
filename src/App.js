@@ -11,7 +11,7 @@ import Hook_Checkbox from "./components/Hook_Checkbox";
 import Hook_use_State_Effect from "./components/Hook_use_State_Effect";
 import ContextApi from "./components/ContextApi";
 import CustomHook from "./components/CustomHook";
-import { GithubUser, display } from "./components/GithubUser";
+import {display } from "./components/GithubUser";
 import WrappedButton from "./components/HOC";
 import WrappedMouse from "./components/HOC_2";
 import LaszyMouseTraker from "./components/CodeSplitting";
